@@ -1,0 +1,39 @@
+<p>Updated: 12/6/16</p>
+
+<div class="Status">
+
+    <p>Security status: MINIMAL</p>
+
+    <p>Security Type: Defaults</p>
+
+    <p>HTTPS status: NONE</p>
+
+    <p>Password encryption: NONE</p>
+
+    <p>File encryption: NONE</p>
+
+</div>
+
+<p>ShadowCorp secirity avatar: NOT DEVELOPED</p>
+<div class="canary">
+
+    <p>Government requests recieved: NONE<br />
+        Gag orders: NONE<br />
+        Government requests fulfilled: NONE</p>
+
+</div>
+<div class="precautions">
+
+    <p class="title">RECOMMENDED PRECAUTIONS</p>
+
+    <p>Use a password not used elsewhere to prevent a reused password attack</p>
+
+    <p>Do not upload files which require higher levels of security. </p>
+
+</div>
+
+<div class="changelog">
+
+    <p>12/6/16: Security file generated.</p>
+
+</div>

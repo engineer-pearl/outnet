@@ -1,6 +1,6 @@
 #Time to ignore everything in this folder
 *
 #Except not the sample and public directories.
-!Public/
-!Sample/
+!Public/**
+!Sample/**
 !.gitignore
