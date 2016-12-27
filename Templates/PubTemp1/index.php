@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <LINK REL=StyleSheet HREF="MainHome.css" type="text/css" media="screen">
+        <?php
+            include "Elements/HomeElements.php";
+            include "Elements/css.php";
+        ?>
+    </style>
+    
+
+    
        <meta charset="utf-8">
         <meta name="dcterms.created" content="Sat, 24 Sep 2016 09:08:07 PST">
         <meta name="description" content="">
@@ -12,23 +19,23 @@
         <div class="boarder">
             <div class="pagestyle">
 	  	   	    <div class="header">
-		   		    <?php include "Header.php"; ?>
+		   		    <?php include "Elements/panels/Header.php"; ?>
 		   		    <div class="menu">
-		   		        <?php include "menue.php"; ?>
+		   		        <?php include "Elements/panels/menue.php"; ?>
 		   		    </div>
 				</div>
 				<div class="header">  
 			        <div class="leftbar">
-				  	   <?php include "leftbar.php"; ?>
+				  	   <?php include "Elements/panels/leftbar.php"; ?>
 			        </div>
 				  
 			        <div class="rightbar">
-			  	       <?php include "rightbar.php"; ?>
+			  	       <?php include "Elements/panels/rightbar.php"; ?>
 			        </div>
 			    </div>
 			    
 			    <div class="maincontent">
-	 	  	        <?php include "content.php"; ?>
+	 	  	        <?php include "Elements/panels/content.php"; ?>
 			    </div>
 	        </div>
 	        <div>

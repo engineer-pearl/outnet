@@ -1,0 +1,9 @@
+Last maintenenced (ddmmyyyy): 27122016
+By: ALD Productions
+Compliance rating: As of Dec27, this template is compatible with NewStandard CSS stylesheets.
+
+CSS Variables: HomeElements.php
+
+CSS Stylesheet: css.php
+
+
