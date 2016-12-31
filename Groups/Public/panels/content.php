@@ -9,5 +9,5 @@ else
 {
     $page = "home.html";
 }
-include "../pages/$page";
+include "/home/OutNet/Groups/$group/pages/$page";
 ?>
