@@ -5,10 +5,7 @@
             include "Elements/HomeElements.php";
             include "Elements/css.php";
         ?>
-    </style>
-    
-
-    
+    </style>    
        <meta charset="utf-8">
         <meta name="dcterms.created" content="Sat, 24 Sep 2016 09:08:07 PST">
         <meta name="description" content="">
