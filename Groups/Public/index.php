@@ -26,9 +26,6 @@
 				  	   <?php include "panels/leftbar.php"; ?>
 			        </div>
 				  
-			        <div class="rightbar">
-			  	       <?php include "panels/rightbar.php"; ?>
-			        </div>
 			    </div>
 			    
 			    <div class="maincontent">
