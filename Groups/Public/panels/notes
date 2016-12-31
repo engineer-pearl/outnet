@@ -1,0 +1,48 @@
+Header PHP:
+    Take location from url
+    Return url location to
+    Set title
+    
+    If logged in (user cookie), then chek permissions
+    Generate header based on what user has access to
+    
+Leftbar PHP: 
+    Chat
+    Coming soon
+    
+Rightbar PHP:
+    Notifications
+    Updates list
+    
+Content PHP:
+    Place text
+    
+Footer:
+    Maybe just normal footer.
+
+------------- SPECIAL CONTENT PAGES ---------------
+Log in:
+    Take ID and Password
+    Check against password database
+    if correct, give user cookie for being good user ^.^
+    If incorrect, DO NOT GIVE COOKIE
+    If "use temporary id" is selected, use temporary id
+    Return to previous page
+    
+Log out:
+    STEAL COOKIE NO COOKIE FOR YOU
+    
+Lockdown:
+    Log in (regardless of if logged in already)
+    If login suceeds:
+        Request verification of security key change
+        Change session security key for user
+        Log out
+    
+Groups PHP:
+    Take group desired from URL
+    Check user cookie
+    Check user permissions
+    If Read Access: Display file list
+    If Write Access: Allow for uploading files
+    If Manage Access: Allow for management, such as deletions and taking away access privelages

@@ -1,0 +1,76 @@
+/* Default CSS */
+    body {
+        color:#dddddd;
+        background-color:#000033;
+        background-image:url('Background Image');
+        background-repeat:no-repeat;
+        font-family: Ubuntu, 'Arial Black', 'Arial Unicode MS';
+    }
+    a  { 
+        color:#33CCCC; 
+        text-decoration:none;
+    }
+        a:visited { color:#FF0080; }
+        a:hover { color:#008000; }
+        a:active { color:#FF00FF; }
+    }
+    p   {
+           margin: 0px;
+           padding: 0px;
+    }
+    .pagestyle { 
+        width:100%;
+        padding:1em; 
+        background-color: #000055;
+        font-size: 20pt;
+    }
+    .header {
+            font-weight: normal; 
+            font-style: normal; 
+            text-decoration: none; 
+            font-size: 20pt;
+            text-align:center;
+            background-color: #000099;
+            border-width: 2px;
+            border-top-width: 0;
+            border-style: solid;
+            border-color: #000000;
+    }
+    .boarder {
+        width: 100%;
+        padding: 1em;
+    }
+    .menu{
+        text-align:center;
+        color: #cc3333;
+        font-size: 15pt;
+    }
+    .leftbar{
+        width: 25%;
+        float:left; 
+        background-color: #000099; 
+        font-size: 15pt;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 5px;
+    }
+    .maincontent{
+        margin-left: 25%;
+        background-color: #000055;
+        font-size: 15pt;
+    }
+    .sidenotehead{
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 5px;
+        font-size: 14pt;
+        background-color: #000055;
+    }
+    .sidenotebody{
+        font-size: 13pt;
+        background-color: #000033;
+    }
+    .chat{
+    }
+    

@@ -35,7 +35,7 @@ else
     $page = "index.php";
 }
 $home = "${home_dir}/Groups/${group}";
-include "${home}/pages/${page}"; //Hand control to page's PHP
+include "${home}/index.php"; //Hand control to page's PHP
 
 /*
 <p>If this page is displaying in your browser, then the server system has been successfully installed. Stand by for functionality.</p>

@@ -1,1 +1,0 @@
-/home/OutNet/Templates/PubTemp1/index.php
