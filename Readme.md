@@ -1,10 +1,6 @@
 ####Last Updated:
 
-<<<<<<< HEAD
-Jan 22 2017, 1:44 est
-=======
-Jan 21 2017, 5:46 est
->>>>>>> f2fab7ddb6f5a52470a76b2149f99f08814b566a
+Jan 23 2017, 1:33 est; 24 hr clock
 
 ###About
 

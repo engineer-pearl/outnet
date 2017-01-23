@@ -1,13 +1,12 @@
 <?php
 
-    class userstorage {
+    class userstorage 
+    {
         protected $pdo;
-    
         public function __construct(PDO $pdo, $err) 
         {
             $this->pdo = $pdo;
         }
-        
         public function ListUsrInfo(int $limit=10, int $offset=0) 
         {
             try
@@ -21,7 +20,6 @@
                 return "ERROR";
             }
         }
-        
         public function ListUsrs(int $limit=10, int $offset=0) 
         {
             try
@@ -36,11 +34,19 @@
             }
         }
         public function NewSystem(char $verify='n', array $make)
-            try connect
+        {
             if($verify=='y')
             {
+                //attemt to connect
+                try{
+                    
+                }
+                catch (exception $e)
+                {
+                    return "Error: $e \n Please check that the database exists and the login information provided in lock.php is accurate.";
+                }
             //This will create all the tables, but right now it isn't ready to create the actual tables. Sorry.
-                if (array_search("", $make) == "retrieve") /*Group_Files*/
+                if ($make[Group_Files] == "retrieve") /*Group_Files*/
                 {
                     $sql = "CREATE TABLE `Group_Files` (
                         `File ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -54,12 +60,12 @@
                         UNIQUE KEY `Name_UNIQUE` (`Name`),
                         UNIQUE KEY `File_UNIQUE` (`File`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=big5;";
-                }
-                    if ($this->pdo->query($sql) === TRUE) {
-                    //change element in array to "Success"
+                    if ($this->pdo->query($sql) === TRUE)
+                    {
+                        $make[Group_Files] = "Success";
                     }
                 }
-                if (array_search("", $make) == "retrieve") /*Group_list*/
+                if ($make[Group_list] == "retrieve") /*Group_list*/
                 {
                     $sql = "CREATE TABLE `Group_List` (
                         `Group_ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -72,12 +78,12 @@
                         UNIQUE KEY `Name_UNIQUE` (`Name`),
                         UNIQUE KEY `Dir_UNIQUE` (`Dir`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=big5;)";
-}
-                    if ($this->pdo->query($sql) === TRUE) {
-                    //change element in array to "Success"
+                    if ($this->pdo->query($sql) === TRUE)
+                    {
+                        $make[Group_list] = "Success";
                     }
                 }
-                if (array_search("", $make) == "retrieve") /*Group_Page*/
+                if ($make[Group_Page] == "retrieve") /*Group_Page*/
                 {
                     $sql = "CREATE TABLE `Group_Page` (
                         `arbitrary` int(11) NOT NULL AUTO_INCREMENT,
@@ -90,14 +96,12 @@
                         PRIMARY KEY (`arbitrary`,`Group`,`Name`,`File`),
                         UNIQUE KEY `File_UNIQUE` (`File`),
                         UNIQUE KEY `Name_UNIQUE` (`Name`)
-                    ) ENGINE=InnoDB DEFAULT CHARSET=big5;
-";
-                }
+                    ) ENGINE=InnoDB DEFAULT CHARSET=big5;";
                     if ($this->pdo->query($sql) === TRUE) {
-                    //change element in array to "Success"
+                        $make[Group_Page] = "Success";
                     }
                 }
-                if (array_search("", $make) == "retrieve") /*Group_Usrs*/
+                if ( $make[Group_Usrs] == "retrieve") /*Group_Usrs*/
                 {
                     $sql = "CREATE TABLE `Group_Usrs` (
                         `Group` int(11) NOT NULL,
@@ -108,10 +112,10 @@
                         PRIMARY KEY (`Usr ID`,`Group`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=big5;";
                     if ($this->pdo->query($sql) === TRUE) {
+                        $make[Group_Usrs] = "Success";
                     //change element in array to "Success"
-                    }
                 }
-                if (array_search("", $make) == "retrieve")/*Templates*/
+                if ($make[Templates] == "retrieve")/*Templates*/
                 {
                     $sql = "CREATE TABLE `Templates` (
                         `Template ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -126,12 +130,12 @@
                         UNIQUE KEY `Name_UNIQUE` (`Name`),
                         UNIQUE KEY `File_UNIQUE` (`File`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=big5;";
-                }
-                    if ($this->pdo->query($sql) === TRUE) {
-                    //change element in array to "Success"
+                    if ($this->pdo->query($sql) === TRUE)
+                    {
+                        $make[Templates] = "Success";
                     }
                 }
-                if (array_search("", $make) == "retrieve")/*UserList*/
+                if ($make[Usrlist] == "retrieve")/*UserList*/
                 {
                     $sql = "CREATE TABLE `UserList` (
                         `Usr_ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -142,22 +146,19 @@
                         PRIMARY KEY (`Usr_ID`,`Username`),
                         UNIQUE KEY `Username_UNIQUE` (`Username`)
                     ) ENGINE=InnoDB DEFAULT CHARSET=big5;";
-                }
-                    if ($this->pdo->query($sql) === TRUE) {
-                    //change element in array to "Success"
+                    if ($this->pdo->query($sql) === TRUE)
+                    {
+                        $make[UserList] = "Success";
                     }
-                    
-                    return "Tables prepared: . \n Tables failed: "
+                    return $make;
+                    }
                 }
             }
-            else
-            {
+            else{
                 return "Command not confirmed. No changes made.";
             }
         }
-        
     }
-
 include "/home/OutNet/lib/lock.php";
 
 /*Constructor statement:
