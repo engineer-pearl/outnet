@@ -1,37 +1,52 @@
 <?php
-/*       NOTICE
-FAILURE TO FOLLOW INSTRUCTIONS BELOW MIGHT DAMAGE THE PROGRAM 
-
-Instructions:
-
-- Place a soft link to this file in /var/www/html/ . 
-- Name the file based on where you want users to be directed.
-DO NOT PUT A LINK TO OUTNET IN THE WEB DIRECTORY. ONLY A LINK TO THIS FILE SHOULD BE THERE.
-ALL PARTS OF THE PROGRAM WILL BE CONNECTED THROUGH THIS FILE.
-
-If you change the name of this directory, you MUST change the name in $home_dir below. If you move the directory from the home/ directory, you MUST adjust the address below. This may need to be done again after an update.
-*/
-$home_dir = "/home/OutNet";
-
-    include "${home_dir}/config.php"; //Config (not MySQL)
-    include "${home_dir}/lib/mysql.php"; //database
-
-if(isset($_GET['Gr']))
-{
-    $group = htmlspecialchars($_GET['Gr']); //group; will be set by database call
-}
-else
-{
-    $group = "Public";
-}
-
-$home = "${home_dir}/Groups/${group}";
-$page = "$home/pages";
-$element = "$home/elements";
-
-include "${home}/index.php"; //Hand control to page's PHP
+    $home_dir = "/home/OutNet";
+    //config
+    include "${home_dir}/config.php"; //Config - none currently functional
+    include "${home_dir}/lib/mysql.php";
+    
+    try{
+        $options = [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // highly recommended
+                PDO::ATTR_EMULATE_PREPARES => false // ALWAYS! ALWAYS! ALWAYS!
+        ];
+        $pdo = new PDO("mysql:host=localhost;dbname=$sqldb", "$sqlusr", "$sqlpas", $options);
+        $connect = new sqlconnect($pdo);
+        //$userStorage = new UserStorage($pdo, "NULL");
+        //userstorage needs to be brought online. but later.
+    }
+    catch(Exception $e)
+    {
+    $err = "Could not connect to database. The issue has been logged and will be addressed when possible.";
+    echo err;
+    //log err; //log will be defined
+    }
+    //log error//database
+    if(isset($_GET['Gr']))
+    {
+        $group = $connect->Group_Lookup();
+        //$group = htmlspecialchars($_GET['Gr']);
+    }
+    else{
+        $group = "Public";
+    }
+    //set pages
+    if(isset($_GET['Pg']))
+    {
+        $page = $connect.Page_Lookup();
+        //$group = htmlspecialchars($_GET['Gr']);
+    }
+    else{
+        $page = "Home";
+    }
+    
+    $home = "${home_dir}/Groups/${group}";
+    $page = "$home/pages";
+    $element = "$home/elements";
+    
+    
+    include "${home}/index.php"; //Hand control to page's PHP
 
 /*
-Maintained by ALD Productions and EngineerPearl0
+ * Maintained by ALD Productions
 */
 ?>
