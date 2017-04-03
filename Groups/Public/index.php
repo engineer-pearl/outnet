@@ -29,7 +29,7 @@
 			    </div>
 			    
 			    <div class="maincontent">
-	 	  	        <?php include "panels/content.php"; ?>
+	 	  	        <?php include $page."/".$Page["Page"]; ?>
 			    </div>
 	        </div>
 	        <div>

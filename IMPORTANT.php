@@ -20,32 +20,14 @@
     echo err;
     //log err; //log will be defined
     }
-    //log error//database
-    if(isset($_GET['Gr']))
-    {
-        $group = $connect->Group_Lookup();
-        //$group = htmlspecialchars($_GET['Gr']);
-    }
-    else{
-        $group = "Public";
-    }
+        $Page = $connect->Page_Lookup();
     //set pages
-    if(isset($_GET['Pg']))
-    {
-        $page = $connect.Page_Lookup();
-        //$group = htmlspecialchars($_GET['Gr']);
-    }
-    else{
-        $page = "Home";
-    }
-    
-    $home = "${home_dir}/Groups/${group}";
+    echo "<p>$Page[Group], $Page[Page]</p>";
+    $home = $home_dir."/Groups/".$Page["Group"];
+    echo $home;
     $page = "$home/pages";
     $element = "$home/elements";
-    
-    
-    include "${home}/index.php"; //Hand control to page's PHP
-
+    include "${home}/index.php"; //Hand control to page's PHP - remove during testing
 /*
  * Maintained by ALD Productions
 */
