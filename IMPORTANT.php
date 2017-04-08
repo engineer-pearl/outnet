@@ -16,15 +16,15 @@
     }
     catch(Exception $e)
     {
-    $err = "Could not connect to database. The issue has been logged and will be addressed when possible.";
-    echo err;
+    $err = "<p>ERROR:</p><p>Could not connect to database.</p><p>If you believe this warning has been recieved in error, please refresh your browser. Otherwise, contact the maitenence team for the website you are accessing.</p>";
+    echo $err;
     //log err; //log will be defined
     }
         $Page = $connect->Page_Lookup();
     //set pages
-    echo "<p>$Page[Group], $Page[Page]</p>";
+    //echo "<p>$Page[Group], $Page[Page]</p>";
     $home = $home_dir."/Groups/".$Page["Group"];
-    echo $home;
+    //echo $home;
     $page = "$home/pages";
     $element = "$home/elements";
     include "${home}/index.php"; //Hand control to page's PHP - remove during testing

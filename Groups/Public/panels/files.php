@@ -1,6 +1,6 @@
 <?php
-    $directory = location_of $_GET['FILES'] in SQL filesystem.db
-    $access = access_rules of $_GET['files'] in SQL filesystem.db
+    $directory = location_of $_GET['FILES'] in SQL filesystem.db;
+    $access = access_rules of $_GET['files'] in SQL filesystem.db;
     if (check_access($access, $_GET['files'], read) = true)
     //Find relevant database
     //if user has permission

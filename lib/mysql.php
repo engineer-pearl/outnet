@@ -9,7 +9,7 @@ class sqlconnect
     }
     public function Page_Lookup()
     {
-        $page = array("Group" => "Public","Page" => "Home");
+        $page = array("Group" => "Public","Page" => "home.html", "Title" => "Home");
         if (isset($_GET['Gr']))
         {
             $page["Group"] = "Public";
@@ -30,7 +30,6 @@ class sqlconnect
             catch (Exception $e)
             {
                 echo "Could not look up group.";
-                $page = array ("Group" => "Public", "Page" => "home.html");
                 return $page;
             }
         }
@@ -48,13 +47,13 @@ class sqlconnect
                 else
                 {
                     $page["Page"] = $Lookup['File'];
+                    $page["Title"] = $Lookup['Title'];
                 }
                 //CheckRights($Lookup["Permissions"]);
             }
             catch (Exception $e)
             {
                 echo "Could not look up group.";
-                $page = array ("Page" => "home.html");
             }
         }
         return $page;

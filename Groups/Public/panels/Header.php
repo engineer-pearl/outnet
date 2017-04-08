@@ -5,8 +5,8 @@
         //if no, put a "logout" button in the upper left
 
 //take location variable from URL
-if (isset($_GET['note'])){
-    echo $_GET['note'];
+if (!empty($Page["Title"])){
+    echo $Page["Title"];
         //check mysql database
             //center
                 //format

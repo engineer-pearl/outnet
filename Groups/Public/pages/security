@@ -2,7 +2,7 @@
 
 <div class="Status">
 
-    <p>Security status: MINIMAL</p>
+    <p>Security status: Minimal</p>
 
     <p>Security Type: Defaults</p>
 
@@ -17,7 +17,7 @@
 <p>ShadowCorp secirity avatar: NOT DEVELOPED</p>
 <div class="canary">
 
-    <p>Government requests recieved: NONE<br />
+     <p>Government requests recieved: NONE<br />
         Gag orders: NONE<br />
         Government requests fulfilled: NONE</p>
 
@@ -32,8 +32,20 @@
 
 </div>
 
-<div class="changelog">
+<div>
+<p class="title">KNOWN SECURITY RISKS:</p>
 
-    <p>12/6/16: Security file generated.</p>
+    <p>SQL vulnerable to injection.</p>
+    <p>File storage not yet avalible.</p>
+    <p>Permission controls not yet functional.</p>
+    <p>Login not yet possible.</p>
+    <p>Encryption not yet avalible.</p>
+
+</div>
+
+<div class="changelog">
+    <p>04/03/17: MINIMAL reduced to Minimal, security risk section added</p>
+    <p>12/ 6/16: Security file generated.</p>
+    <p>MM/DD/YY: Determined 4/3/17 due to memory issues</p>
 
 </div>

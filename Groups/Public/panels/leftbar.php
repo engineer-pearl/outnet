@@ -13,10 +13,9 @@
             <p><span style="color: red;">Navigation menues not yet written.</span></p>
             <p style="color: green;">Database structure written</p>
             <p style="color: red;">Encryption not yet avalible. DO NOT RE-USE IMPORTANT PASSWORDS ON THIS SITE.</p>
-            <p style="color: green;">Using PDO for MySQL database calls</span></p>
-            <p style="color: green;">Can use content from URL (Use "?note=" to change the header</p>
+            <p style="color: green;">Using PDO for database calls</span></p>
             <p style="color: green;">Content is mostly located in protected area.</p>
-            <p style = "color: red;">Multiple security risks acknowledged due to lack of SQL database calls and call controls</p>
+            <p style = "color: red;">See Security for acknowledged security risks</p>
         </div>
 <?php
 
