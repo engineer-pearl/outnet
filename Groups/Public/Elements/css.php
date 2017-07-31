@@ -81,6 +81,30 @@ echo <<<HEREDOT
       }
       .chat{
       }
+      nav ul li{
+        padding: 20px, 20px, 20px, 20px;
+                  display: inline-table;
+                  border-radius: 10px;
+                  }
+      nav ul {
+        padding: 20px, 20px, 20px, 20px;
+        border-radius: 10px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+
+}
+      nav ul:after {
+                  content: "";
+                  clear: both;
+                  displlay: inline-table;
+                  }
+      nav ul ul{
+        display: none;
+      }
+        nav ul li:hover > ul {
+        display: block;
+        }
     </style>
 HEREDOT;
 

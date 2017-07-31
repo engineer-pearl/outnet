@@ -79,39 +79,13 @@ echo <<<HEREDOT
             font-size: ${Update_Text};
             background-color: ${Update_Win};
         }
-        .chat{
+        nav ul ul{
+            display: none;
         }
-        
-        
+        nav ul li:hover > ul {
+                    display: block;
+                    }
 
-                    
-                    
-                    
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown-cont a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-cont a:hover {}
-
-.dropdown:hover .dropdown-cont {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    //background-color:;
-}
       </style>
 HEREDOT;
 
