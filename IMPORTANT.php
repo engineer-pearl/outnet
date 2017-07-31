@@ -3,10 +3,9 @@
     //config
     include "$pages->home_dir"."/config.php"; //Config - none currently functional
     include "$pages->home_dir"."/lib/mysql.php"; //Requires SQL database to function.
-
     //sets the pages
     $Page = $pages->nav();
-    //echo "<p>$Page[Group], $Page[Page]</p>";
+    echo "<p>$Page[Group], $Page[Page]</p>";
     $home = $pages->home_dir."/Groups/".$Page["Group"];
     //echo $home;
     $page = "$home/pages";
@@ -16,15 +15,20 @@
  * Maintained by ALD Productions
 */
 ?>
+
+
 <?php 
 class pages
 {
     public $home_dir = "/home/OutNet";
+    public $Page = array("Group" => "Public","Page" => "home.html", "Title" => "Home");
     
-    function buildlink( $ends )
+    function buildlink( $endg, $endp )
     {
-    echo "href=\"$home\"";
+    echo '<a href="'.$_SERVER["PHP_SELF"]."?Gr=".$endg."&Pg=".$endp.'" >';
     }
+    
+    
     function dbnav()
     /*
      * NOTICE: Broken until login information properly migrated.
@@ -46,16 +50,24 @@ class pages
             echo $err;
             //log err; //log will be defined
         }
-        return $connect->Page_Lookup();
+        $Page = $connect->Page_Lookup();
+        return $Page;
     }
     function nav()
     {
-        $Page = array("Group" => "Public","Page" => "home.html", "Title" => "Home");
-        if (isset(_GET['gr']))
-            $Page["Group"] = $_GET['Gr'];
-            if (isset(_GET['Pg']))
-                $Page["Page"] = $_GET['Pg'];
-            return $Page;
+        if (isset($_GET['Gr']))
+        {
+            $page["Group"] = $_GET['Gr'];
+        }
+        else
+            $page[Group] = $this->Page["Group"];
+        if (isset($_GET['Pg']))
+        {
+            $page["Page"] = $_GET['Pg'];
+        }
+        else 
+            $page["Page"] = $this->Page["Page"];
+            return $page;
     }
 }
 ?>
