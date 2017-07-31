@@ -1,18 +1,20 @@
 ####Last Updated:
 
-Jan 23 2017, 1:33 est; 24 hr clock
+Jul 31 4:17, 4:17 est; 24 hr clock
 
-###About
+#About
 
-####The Program
+##The Program
+
+ -- NOTICE! This version of Outnet is soon to be obsolete. Please check OutNet on Rails for future updates. --
 
 Notice: This version of outnet has been made obsolite due to the adoption of Ruby on Rails for development.
 
-#####Note:
+##Note:
 
 this software is in fact in development. Some concerns (No encryption for passwords, lack of ssl support, does not work on non-linux devices, insecure use of variables, etc.) have been noted, but are not yet being corrected.
 
-###Usage Instructions:
+##Usage Instructions:
 
 So you just downloaded OutNet, from the Outside Network series. Congradulations, that's the first step. However, OutNet doesn't have an installer yet, so installation has to be done manually.
 
@@ -28,18 +30,25 @@ So you just downloaded OutNet, from the Outside Network series. Congradulations,
  
  4. Copy lock.sample.php to lock.php and replace the defaults with your MySQL log in information.
 
-###Credit where credit is due
+##Credit where credit is due
 
-####Coders:
+<<<<<<< HEAD
+###Coders:
 **ALD Productions** 
+=======
+###Coders:
+**ALD Productions** -- Primary Coder
 
-####Advertising:
+###Advertising:
 **EngineerPearl0**
 
-####Hosting:
+<<<<<<< HEAD
+##Hosting:
 **ALD Productions**
-
-###Usage Rights
+=======
+##Hosting:
+**ALD Productions** -- ALD Productions Server
+##Usage Rights
 
 By downloading this software during the heavy development period, you agree to 
 

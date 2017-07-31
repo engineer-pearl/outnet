@@ -33,7 +33,7 @@
 			    </div>
 	        </div>
 	        <div>
- 	            This server is hosted by <a href="about.html">ALD Productions</a> Please remember to respect the creator's work!<br><br>
+ 	            This server is hosted by <?php $pages->buildlink( "Public" ,"about_ald.html")?> ALD Productions</a> Please remember to respect the creator's work!<br><br>
  	            
  	            *ALD Productions is not a registered anything of anyone.
             </div>    
