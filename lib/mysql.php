@@ -1,5 +1,5 @@
 <?php
-include "${home_dir}/lib/lock.php"; //so I can log in
+include "$pages->home_dir"."/lib/lock.php"; //so I can log in
 class sqlconnect
 {
     protected $pdo;

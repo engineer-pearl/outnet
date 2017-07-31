@@ -2,9 +2,11 @@
 
 Jan 23 2017, 1:33 est; 24 hr clock
 
-###About
+#About
 
-####The Program
+##The Program
+
+ -- NOTICE! This version of Outnet is soon to be obsolete. Please check OutNet on Rails for future updates. --
 
 Outnet is a primarily PHP web server system built to be installed on a linux distribution. It features group-based project management and individual user permissions. Groups are hidden from view unless they are made public.
 
@@ -12,11 +14,11 @@ Users within the groups will be able to download and upload files, as well as en
 
 Outnet will also feature security features such as _"Nuke"_ (Destroyes the group and everything in it) and _"Dump\_to\_email"_ (Sends all files, pages, and content, not includng user lists to a pre-determined email address) for situations where security has been compromised. 
 
-#####Note:
+##Note:
 
 this software is in fact in development. Some concerns (No encryption for passwords, lack of ssl support, does not work on non-linux devices, insecure use of variables, etc.) have been noted, but are not yet being corrected.
 
-###Usage Instructions:
+##Usage Instructions:
 
 So you just downloaded OutNet, from the Outside Network series. Congradulations, that's the first step. However, OutNet doesn't have an installer yet, so installation has to be done manually.
 
@@ -32,20 +34,20 @@ So you just downloaded OutNet, from the Outside Network series. Congradulations,
  
  4. Copy lock.sample.php to lock.php and replace the defaults with your MySQL log in information.
 
-###Credit where credit is due
+##Credit where credit is due
 
-####Coders:
+###Coders:
 **ALD Productions** -- Primary Coder
 **EngineerPearl0** -- Primary Planner
 
-####Advertising:
+###Advertising:
 **EngineerPearl0**
 
-####Hosting:
+##Hosting:
 **ALD Productions** -- ALD Productions Server
 **EngineerPearl0** -- Github Account
 
-###Usage Rights
+##Usage Rights
 
 By downloading this software during the heavy development period, you agree to 
 
