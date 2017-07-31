@@ -6,11 +6,7 @@ Jan 23 2017, 1:33 est; 24 hr clock
 
 ####The Program
 
-Outnet is a primarily PHP web server system built to be installed on a linux distribution. It features group-based project management and individual user permissions. Groups are hidden from view unless they are made public.
-
-Users within the groups will be able to download and upload files, as well as engage in group chat, both logged and direct.
-
-Outnet will also feature security features such as _"Nuke"_ (Destroyes the group and everything in it) and _"Dump\_to\_email"_ (Sends all files, pages, and content, not includng user lists to a pre-determined email address) for situations where security has been compromised. 
+Notice: This version of outnet has been made obsolite due to the adoption of Ruby on Rails for development.
 
 #####Note:
 
@@ -35,15 +31,13 @@ So you just downloaded OutNet, from the Outside Network series. Congradulations,
 ###Credit where credit is due
 
 ####Coders:
-**ALD Productions** -- Primary Coder
-**EngineerPearl0** -- Primary Planner
+**ALD Productions** 
 
 ####Advertising:
 **EngineerPearl0**
 
 ####Hosting:
-**ALD Productions** -- ALD Productions Server
-**EngineerPearl0** -- Github Account
+**ALD Productions**
 
 ###Usage Rights
 
