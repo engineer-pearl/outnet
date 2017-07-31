@@ -23,8 +23,8 @@ echo <<<HEREDOT
             a:active { color:${Active_Link}; }
         }
         p   {
-               margin: 0px;
-               padding: 0px;
+           margin: 0px;
+           padding: 0px;
         }
         .pagestyle { 
             width:100%;
@@ -33,16 +33,16 @@ echo <<<HEREDOT
             font-size: ${TitleFontSize};
         }
         .header {
-                font-weight: normal; 
-                font-style: normal; 
-                text-decoration: none; 
-                font-size: ${TitleFontSize};
-                text-align:center;
-                background-color: ${Header_back};
-                border-width: 2px;
-                border-top-width: 0;
-                border-style: solid;
-                border-color: #000000;
+            font-weight: normal; 
+            font-style: normal; 
+            text-decoration: none; 
+            font-size: ${TitleFontSize};
+            text-align:center;
+            background-color: ${Header_back};
+            border-width: 2px;
+            border-top-width: 0;
+            border-style: solid;
+            border-color: #000000;
         }
         .boarder {
             width: 100%;
@@ -56,32 +56,63 @@ echo <<<HEREDOT
         .leftbar{
             width: 25%;
             float:left; 
-          background-color: ${Sidebar_Back}; 
-          font-size: 15pt;
-          text-align: center;
-          padding-left: 1%;
-          padding-right: 1%;
-          padding-bottom: 5px;
-      }
-      .maincontent{
-          margin-left: 25%;
-          background-color: ${Main_Win_Back};
-          font-size: ${MainFont};
-      }
-      .sidenotehead{
-          padding-left: 2%;
-          padding-right: 2%;
-          padding-bottom: 5px;
-          font-size: ${Update_Title};
-          background-color: ${Update_Boarder};
-      }
-      .sidenotebody{
-          font-size: ${Update_Text};
-          background-color: ${Update_Win};
-      }
-      .chat{
-      }
-    </style>
+            background-color: ${Sidebar_Back}; 
+            font-size: 15pt;
+            text-align: center;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 5px;
+        }
+        .maincontent{
+            margin-left: 25%;
+            background-color: ${Main_Win_Back};
+            font-size: ${MainFont};
+        }
+        .sidenotehead{
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 5px;
+            font-size: ${Update_Title};
+            background-color: ${Update_Boarder};
+        }
+        .sidenotebody{
+            font-size: ${Update_Text};
+            background-color: ${Update_Win};
+        }
+        .chat{
+        }
+        
+        
+
+                    
+                    
+                    
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-cont a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-cont a:hover {}
+
+.dropdown:hover .dropdown-cont {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    //background-color:;
+}
+      </style>
 HEREDOT;
 
 ?>

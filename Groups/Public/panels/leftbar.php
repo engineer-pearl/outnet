@@ -12,7 +12,7 @@
             <p><span style="color: red;">Database Calls unavalible.</span></p>
             <p><span style="color: red;">Page titles made unavalable due to database.</span></p>
             <p><span style="color: red;">Content only avalible by knowing URL or having link avalible.</span></p>
-            <p><span style="color: red;">Navigation dropdowns expected soon.</span></p>
+            <p><span style="color: red;">Navigation dropdowns in progress.</span></p>
             <p style="color: green;">Database structure written</p>
             <p style="color: red;">Encryption not yet avalible. DO NOT RE-USE IMPORTANT PASSWORDS ON THIS SITE.</p>
             <p style="color: green;">Code ready for database implimentation</span></p>
